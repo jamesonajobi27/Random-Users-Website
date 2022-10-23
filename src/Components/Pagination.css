@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Profile{
+    display: flex;
+}
+img{
+    border-radius: 20px;
+
+}
+body{
+  
+    overflow-y: scroll;
+}
