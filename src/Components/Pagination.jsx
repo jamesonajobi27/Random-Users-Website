@@ -1,15 +1,11 @@
 import React from "react"
 import ReactPaginate from "react-paginate"
-
+import {ErrorBoundary} from "../Components/ErrorBoundary"
 
 export default function Pagination(){
 
-
     let [RandomUsers, setRandomUsers] = React.useState([])
 const [loading, setLoading] = React.useState(false);
-
-
-
 
 
   React.useEffect(() => {
@@ -17,7 +13,6 @@ const [loading, setLoading] = React.useState(false);
     fetch("https://randomuser.me/api/?results=200")
     .then(res => res.json())
     .then(data =>   setRandomUsers(data.results))
-    setLoading(false)
 }, [])
     
 
@@ -36,13 +31,10 @@ const [loading, setLoading] = React.useState(false);
 
   
 
-
-
-
    // This is how I passed the data that will appear on the page, so it <Pagination /> does not 
    // control what appears on the Users Page.
    let User = displayUsers.map((user) => {
-   
+           
        return(
         <div className="BodyofUsers">
             <div className="Profile">
@@ -76,9 +68,9 @@ const [loading, setLoading] = React.useState(false);
        )
 
    })
-  
      return(
-        <div className="Pagination">
+      <ErrorBoundary>
+      <div className="Pagination">
           {User}
           <div type="submit">{loading ? <h1>Loading..</h1> :<></>}</div>
           <ReactPaginate 
@@ -96,8 +88,8 @@ const [loading, setLoading] = React.useState(false);
        
        />  
 
-          </div> 
-          
+          </div>
+          </ErrorBoundary>
          
      ) 
 }

@@ -5,6 +5,7 @@ import SharedLayout from './Pages/SharedLayout'
 import Users from './Pages/Users.jsx'
 import Home from  './Pages/Home.jsx'
 import Error from './Pages/Errorpage.jsx'
+import {ErrorBoundary} from "./Components/ErrorBoundary"
 
 function App() {
  
@@ -18,6 +19,7 @@ function App() {
       <Route path="*" element={<Error />}/>
     </Routes>
     </BrowserRouter>
+   
   )
 }
 
