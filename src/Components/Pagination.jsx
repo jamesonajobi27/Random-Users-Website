@@ -6,13 +6,20 @@ export default function Pagination(){
 
 
     let [RandomUsers, setRandomUsers] = React.useState([])
+const [loading, setLoading] = React.useState(false);
+
+
+
+
 
   React.useEffect(() => {
+    setLoading(true)
     fetch("https://randomuser.me/api/?results=200")
     .then(res => res.json())
     .then(data =>   setRandomUsers(data.results))
- 
+    setLoading(false)
 }, [])
+    
 
   const [pageNumber, setPageNumber] = React.useState(0)
 
@@ -27,7 +34,7 @@ export default function Pagination(){
       setPageNumber(selected)
    }
 
-
+  
 
 
 
@@ -35,6 +42,7 @@ export default function Pagination(){
    // This is how I passed the data that will appear on the page, so it <Pagination /> does not 
    // control what appears on the Users Page.
    let User = displayUsers.map((user) => {
+   
        return(
         <div className="BodyofUsers">
             <div className="Profile">
@@ -72,6 +80,7 @@ export default function Pagination(){
      return(
         <div className="Pagination">
           {User}
+          <div type="submit">{loading ? <h1>Loading..</h1> :<></>}</div>
           <ReactPaginate 
        previousLabel={"Previous"}
         nextLabel={"Next"}
@@ -86,7 +95,9 @@ export default function Pagination(){
        marginPagesDisplayed={0}
        
        />  
-          </div>
+
+          </div> 
+          
          
      ) 
 }
