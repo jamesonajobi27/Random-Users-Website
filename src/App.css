@@ -167,3 +167,18 @@ h2{
     justify-content: center;
     align-items: center;
 }
+
+.ErrorPage{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+}
+.ErrorPage h1{
+    font-size: 150px;
+    color:black;
+}
+.ErrorPage h3{
+    font-size: 50px;
+}
