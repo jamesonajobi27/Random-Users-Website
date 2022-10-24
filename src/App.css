@@ -1,3 +1,169 @@
 body{
-    overflow: scroll;
+    background-color: #e2e0ff72;
+}
+.Shared{
+    background-color: #e2e0ff;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0px 40px ;
+     border-bottom: 2px solid #282566;
+}
+
+h1{
+    font-family: 'Acme', sans-serif;
+    font-size: 30px;
+    color: #282566;
+    margin: 20px;
+}
+.link{
+    font-size: 25px;
+    color:#282566;
+    margin: 40px; 
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: 'Bebas Neue', cursive;
+    transition: 0.7s;
+}
+.link:hover{
+    font-size: 25px;
+    transition: 0.7s;
+   background-color: #837dff;
+}
+:root{
+    --primary-100: #e2e0ff;
+    --primary-200: #c1beff;
+    --primary-300: #a29dff;
+    --primary-400: #837dff;
+    --primary-500: #645cff;
+    --primary-600: #504acc;
+    --primary-700: #3c3799;
+    --primary-800: #282566;
+    --primary-900: #141233;
+  
+}
+
+.HomePage{
+    width: 900px;
+    height: 100px;
+     margin: 2% auto;
+     color: #282566;
+     padding: 10px;
+     border-radius: 30px;
+    text-align: justify;
+}
+p{
+    /* font-family: 'Courier New', Courier, monospace; */
+    /* font-family: 'Arimo', sans-serif; */
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+
+}
+.HomePage span{
+    font-size: 40px;
+}
+.HomePage .Random{
+    color: #282566;
+   background-color: #e2e0ff;
+    margin: 20px;
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    font-weight: bolder;
+    border: 2px solid #282566;
+}
+h3{
+    font-size: 15px;
+    margin: 0px 40px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.Profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: #e2e0ff;
+    width: 700px;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: 'Playfair Display', serif;
+    color:#282566;
+    border: 2px solid #282566;
+}
+label{
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 10px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+img{
+    border-radius: 10px;
+    height: 190px;
+    width: 200px;
+    margin-right: 40px;
+    margin-left: 40px;
+    border: 2px solid #282566;
+}
+h2{
+    font-size: 20px;
+   font-weight: 500;
+}
+
+.BodyofUsers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ProfileContent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.paginationBttns{
+    width:  80%;
+    height: 40px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+   margin: 20px;
+   align-items: center;
+}
+
+
+.paginationBttns a{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px ;
+    border: 2px solid #282566;
+    cursor:pointer;
+}
+.paginationBttns a:hover{
+    background-color:#282566; 
+    color:#e2e0ff;
+}
+.paginationActive{
+    color:#e2e0ff;
+    background-color: #282566;
+}
+
+.Pagination{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
