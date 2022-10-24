@@ -13,8 +13,9 @@ const [loading, setLoading] = React.useState(false);
     fetch("https://randomuser.me/api/?results=200")
     .then(res => res.json())
     .then(data =>   setRandomUsers(data.results))
+    setLoading(false)
 }, [])
-    
+   
 
   const [pageNumber, setPageNumber] = React.useState(0)
 
@@ -28,7 +29,7 @@ const [loading, setLoading] = React.useState(false);
    const changepage = ({selected}) =>  {
       setPageNumber(selected)
    }
-
+ 
   
 
    // This is how I passed the data that will appear on the page, so it <Pagination /> does not 
