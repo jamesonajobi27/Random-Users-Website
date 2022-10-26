@@ -152,10 +152,10 @@ h2{
     border: 2px solid #282566;
     cursor:pointer;
 }
-.paginationBttns a:hover{
+/* .paginationBttns a:hover{
     background-color:#282566; 
     color:#e2e0ff;
-}
+} */
 .paginationActive{
     color:#e2e0ff;
     background-color: #282566;
@@ -181,4 +181,11 @@ h2{
 }
 .ErrorPage h3{
     font-size: 50px;
+}
+.disabled{
+     color:grey;
+}
+.disabled:hover{
+    color:grey;
+    cursor:default;
 }
