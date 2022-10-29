@@ -3,7 +3,7 @@ import React from "react"
 import Pagination from "../Components/Pagination.jsx"
 
 
-function Users(){
+export default function Users(){
 
   
   return(
@@ -15,4 +15,3 @@ function Users(){
   )
 }
 
-export default Users

@@ -73,8 +73,9 @@ export default function Pagination(){
    })
      return(
       <div className="Pagination">
-         {loading && <h1>Loading..</h1>}
+         {loading && <div className="Load">Loading..</div>}
           {User}
+          {!loading && 
           <ReactPaginate 
        previousLabel={"Previous"}
         nextLabel={"Next"}
@@ -90,7 +91,7 @@ export default function Pagination(){
        breakLabel={""}
 
        />  
-
+                   }
           </div>
          
      ) 

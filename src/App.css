@@ -189,3 +189,14 @@ h2{
     color:grey;
     cursor:default;
 }
+.Load{
+    font-family: 'Acme', sans-serif;
+    font-size: 50px;
+    color: #282566;
+    text-align: center;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    margin: 20% auto;
+}
