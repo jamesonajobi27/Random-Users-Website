@@ -11,10 +11,7 @@ export default function ErrorBoundary({children}) {
       }
     }, [location.key]);
     return (
-      /**
-       * NEW: The class component error boundary is now
-       *      a child of the functional component.
-       */
+ 
       <ErrorBoundaryInner 
         hasError={hasError} 
         setHasError={setHasError}
@@ -24,10 +21,7 @@ export default function ErrorBoundary({children}) {
     );
   }
   
-  /**
-   * NEW: The class component accepts getters and setters for
-   *      the parent functional component's error state.
-   */
+
   class ErrorBoundaryInner extends Component {
     constructor(props) {
       super(props);

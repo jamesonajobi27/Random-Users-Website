@@ -87,6 +87,7 @@ export default function Pagination(){
         pageRangeDisplayed={5}
        marginPagesDisplayed={0}
        disabledLinkClassName={"disabled"}
+       breakLabel={""}
 
        />  
 

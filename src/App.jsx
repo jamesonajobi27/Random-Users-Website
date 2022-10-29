@@ -1,4 +1,4 @@
-
+import React from "react"
 import './App.css'
 import {BrowserRouter, Routes , Route} from "react-router-dom"
 import SharedLayout from './Pages/SharedLayout'
@@ -16,7 +16,7 @@ function App() {
     <Routes>
       <Route path="/" element={<SharedLayout />} >
         <Route index element={<Home />}/>
-        <Route path="Users" element={<Users />}/>
+           <Route path="Users" element={  <Users /> } />
       </Route>
       <Route path="*" element={<Error />}/>
     </Routes>
